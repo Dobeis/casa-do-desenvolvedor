@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@nulldreams/vue-loading": "0.0.1",
+    "axios": "^0.18.0",
     "vue": "^2.5.2",
     "vue-carousel": "^0.6.9",
     "vue-lottie": "^0.2.1",

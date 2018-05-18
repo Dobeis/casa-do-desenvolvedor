@@ -13,8 +13,7 @@
             <div class="row">
                 <!-- Column -->
                 <div class="col-lg-4 col-md-6">
-                    <p class="p-t-10 op-5">Nullam erat ametam arcu lorme pharetra id risus act sectetur ipsum luctus est ullam erat ametam arcu lorme pharetra id us act sectetur ipsum luctus est. </p>
-                    <p class="op-5">Vestibulum in accumsa maga eds maurise elit tincidunt turpis id semper. </p>
+                    <img src="/static/images/footer-logos.png" alt="" class="img-fluid">
                     <div class="m-t-20 m-b-30">
                         <a href="#" class="link"><i class="fa fa-facebook"></i></a>
                         <a href="#" class="link"><i class="fa fa-twitter"></i></a>

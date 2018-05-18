@@ -4,7 +4,7 @@
                  subtitulo='Concentre-se nos requisitos mais importantes do seu software. Deixe o módulo fiscal com a TecnoSpeed.'
                  squad="ficou fácil." 
                  cor="#00d2ff" 
-                 imagem="./static/images/dfe/header.png" 
+                 imagem="/static/images/dfe/header.png" 
                  fundo="dfe"
                  scroll="#caracteristicas" />
         <!-- <section id="slider-sec" class="slider4">
@@ -55,7 +55,7 @@
                             <small class="text-industria">NFe, MDFe, GNRe.</small>
                             <h3 class="font-medium">Indústria</h3>
                             <p>Projetos de software para indústria são complexos. Documentos fiscais eltrônicos, também. Desse segundo, a gente cuida para você.</p>
-                            <a class="btn btn-industria-gradiant btn-md btn-rounded btn-arrow m-t-20" href="#/squads/industria"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-industria-gradiant btn-md btn-rounded btn-arrow m-t-20" href="/squads/industria"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <!-- Column -->
@@ -67,7 +67,7 @@
                             <small class="text-varejo">NFCe, CFe SAT, NFe, GNRe.</small>
                             <h3 class="font-medium">Varejo</h3>
                             <p>O ECF está acabando, e vários projetos competem entre si para tomar o lugar do velho cupom fiscal. Temos soluções para todos eles.</p>
-                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20" href="#/squads/varejo"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20" href="/squads/varejo"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <!-- Column -->
@@ -84,7 +84,7 @@
                             <small class="text-servico">NFSe.</small>
                             <h3 class="font-medium">Serviços</h3>
                             <p>O ramo de prestação de serviços foi agraciado com o documento fiscal eletrônico mais complexo. Na Nota Fiscal de Serviços eletrônica, cada município pode estabelecer suas próprias exigências. Isto é, não há um padrão nacional. Aliás, há sim: <strong>o nosso.</strong></p>
-                            <a class="btn btn-servico-gradiant btn-md btn-rounded btn-arrow m-t-20" href="#/squads/servicos"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-servico-gradiant btn-md btn-rounded btn-arrow m-t-20" href="/squads/servicos"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                             <small class="text-transporte">CTe, MDFe, CTe OS.</small>
                             <h3 class="font-medium">Transporte</h3>
                             <p>Transportadoras conhecem bem as consequências de um problema com documentação fiscal, Evite o "caminhão parado": forneça a melhor solução.</p>
-                            <a class="btn btn-transporte-gradiant btn-md btn-rounded btn-arrow m-t-20" href="#/squads/transporte"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-transporte-gradiant btn-md btn-rounded btn-arrow m-t-20" href="/squads/transporte"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <!-- Column -->
@@ -109,10 +109,10 @@
                     <!-- Column -->
                     <div class="col-lg-6">
                         <div class="text-box text-left"> 
-                            <small class="text-gestao">eSocial, EFD-Reinf, SPED Fiscal.</small>
+                            <small class="text-escrituracao-fiscal">eSocial, EFD-Reinf, SPED Fiscal.</small>
                             <h3 class="font-medium">Escrituração Fiscal</h3>
                             <p>Juntos, esses novos projetos do SPED prometem reduzir a papelada e facilitar a vida dos departamentos pessoais e contábeis. Enquanto isso, a gente promete facilitar a sua implementação.</p>
-                            <a class="btn btn-gestao-gradiant btn-md btn-rounded btn-arrow m-t-20" href="#/squads/escrituracao-fiscal"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-escrituracao-fiscal-gradiant btn-md btn-rounded btn-arrow m-t-20" href="/squads/escrituracao-fiscal"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                             <small class="text-industria">NFe, MDFe, GNRE.</small>
                             <h3 class="font-medium">Indústria</h3>
                             <p>Projetos de software para indústria são complexos. Documentos fiscais eltrônicos, também. Desse segundo, a gente cuida para você.</p>
-                            <a class="btn btn-industria-gradiant btn-md btn-rounded btn-arrow m-t-20" href="#/squads/industria"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-industria-gradiant btn-md btn-rounded btn-arrow m-t-20" href="/squads/industria"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <!-- Column -->
@@ -152,7 +152,7 @@
                             <small class="text-varejo">NFe, MDFe, GNRE.</small>
                             <h3 class="font-medium">Varejo</h3>
                             <p>O ECF está acabando, e vários projetos competem entre si para tomar o lugar do velho cupom fiscal. Temos soluções para todos eles.</p>
-                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20" href="#/squads/varejo"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20" href="/squads/varejo"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                             <small class="text-servico">NFSe.</small>
                             <h3 class="font-medium">Serviços</h3>
                             <p>O ramo de prestação de serviços foi agraciado com o documento fiscal eltetrônico mais complexo. Não há um padrão nacional. Aliás, há sim: <strong>o nosso.</strong></p>
-                            <a class="btn btn-servico-gradiant btn-md btn-rounded btn-arrow m-t-20" href="#/squads/servico"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-servico-gradiant btn-md btn-rounded btn-arrow m-t-20" href="/squads/servico"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -180,7 +180,7 @@
                             <small class="text-transporte">CTe, CTe OS, MDFe.</small>
                             <h3 class="font-medium">Transporte</h3>
                             <p>Transportadoras conhecem bem as consequências de um problema com documentação fiscal, Evite o "caminhão parado": forneça a melhor solução.</p>
-                            <a class="btn btn-transporte-gradiant btn-md btn-rounded btn-arrow m-t-20" href="#/squads/transporte"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-transporte-gradiant btn-md btn-rounded btn-arrow m-t-20" href="/squads/transporte"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -191,10 +191,10 @@
                     <!-- Column -->
                     <div class="col-lg-6">
                         <div class="text-box text-center"> 
-                            <small class="text-gestao">eSocial, EFD-Reinf.</small>
+                            <small class="text-escrituracao-fiscal">eSocial, EFD-Reinf.</small>
                             <h3 class="font-medium">Escrituração Fiscal</h3>
                             <p>Juntos, esses novos projetos do SPED prometem reduzir a papelada e facilitar a vida dos departamentos pessoais. Enquanto isso, a gente promete facilitar a sua implementação.</p>
-                            <a class="btn btn-gestao-gradiant btn-md btn-rounded btn-arrow m-t-20" href="#/squads/escrituracao-fiscal"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-escrituracao-fiscal-gradiant btn-md btn-rounded btn-arrow m-t-20" href="/squads/escrituracao-fiscal"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -202,6 +202,7 @@
         </div>
         <count cor="#00d2ff"/>
         <testimonials cor1="#00d2ff" cor2="#3a7bd5"/>
+        <formHome squad="industria" redirect="industria" documento="dfe-1-home" token="9745ef9bcdbca85782c8"/>
         <blog cor="#00d2ff"/>
     </div>
 </template>
@@ -213,6 +214,7 @@ import testimonials from '@/components/general/testimonial'
 import blog from '@/components/general/blog'
 import count from '@/components/general/count'
 import caracteristicas from '@/components/general/caracteristicas'
+import formHome from '@/components/general/formHomes'
 
 export default {
     components: {
@@ -220,7 +222,8 @@ export default {
         testimonials,
         blog,
         caracteristicas,
-        count
+        count,
+        formHome
     }
 }
 </script>

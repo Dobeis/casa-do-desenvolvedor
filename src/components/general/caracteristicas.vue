@@ -96,11 +96,20 @@
 <script>
 export default {
     props: {
-        cor: String
+        cor: String,
+        cor2: String,
+        cor3: String
     },
     computed: {
         squadColor() {
-        
+        if (this.cor === 'fintech') {
+            return `background: ${this.cor};
+              background: -webkit-linear-gradient(legacy-direction(to right), ${this.cor} 0%, ${this.cor2} 50%, ${this.cor3} 100%);
+              background: -webkit-gradient(linear, left top, right top, from(${this.cor}), to(${this.cor2}));
+              background: -webkit-linear-gradient(left, ${this.cor} 0%, ${this.cor2} 50%, ${this.cor3} 100%);
+              background: -o-linear-gradient(left, ${this.cor} 0%, ${this.cor2} 50%, ${this.cor3} 100%);
+              background: linear-gradient(to right, ${this.cor} 0%, ${this.cor2} 50%, ${this.cor3} 100%);`
+        }
         return `color: ${this.cor} !important;
                 fill: ${this.cor} !important;`
         }

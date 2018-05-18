@@ -5,7 +5,7 @@
                  squad="Indústria" 
                  cor="#33A0DD" 
                  :imagem="defaultOptions" 
-                 fundo="./static/images/dfe/squads/industria/hero.png"
+                 fundo="/static/images/dfe/squads/industria/hero.png"
                  scroll="#produtos" />
 
     <div class="bg-white spacer feature41" id="produtos">
@@ -56,21 +56,21 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <img src="/static/images/dfe/squads/industria/box.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInDown" />
                             <p class="m-t-40 op-8 animated fadeIn">A Nota Fiscal eletrônica, modelo 55, foi o primeiro documento criado pelo projeto SPED. Deve ser emitida em toda operação B2B (entre empresas) e até mesmo B2C (entre empresa e consumidor final) em alguns casos. Além de todas as etapas de comunicação, nossas soluções para NFe ainda oferecem auditoria fiscal.</p> 
-                            <a class="btn btn-industria-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" href="#/squads/industria/nfe">
+                            <a class="btn btn-industria-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" href="/squads/industria/nfe">
                                 <span>Conheça <i class="ti-arrow-right"></i></span>
                             </a>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <img src="/static/images/dfe/squads/industria/mdfe.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInRight" />
                             <p class="m-t-40 op-8 animated fadeIn">Algumas indústrias, por diversas razões, preferem ter sua própria frota para escoar sua produção, sem depender de uma transportadora. Nestes casos, essa indústria deverá emitir o MDFe, no qual as NFes referentes aos produtos transportados em determinada operação serão anexados. Nossa solução está prontinha para o seu ERP.</p> 
-                            <a class="btn btn-industria-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22">
+                            <a class="btn btn-industria-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" href="/squads/industria/mdfe">
                                 <span>Conheça <i class="ti-arrow-right"></i></span>
                             </a>
                         </div>
                         <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab">
                             <img src="/static/images/dfe/squads/industria/gnre.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInUp" />
                             <p class="m-t-40 op-8 animated fadeIn">Com a regulamentação da Partilha do ICMS entre os estados, um número maior de empresas passou a ter que emitir a GNRE, conforme cada operação de venda interestadual é realizada. Automatize a geração da GNRE no seu sistema!</p> 
-                            <a class="btn btn-industria-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22">
+                            <a class="btn btn-industria-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" href="/squads/industria/gnre">
                                 <span>Conheça <i class="ti-arrow-right"></i></span>
                             </a>
                         </div>
@@ -86,6 +86,8 @@
   <count cor="#33A0DD"/>
   <!-- Testemunhos -->
   <testimonial cor1="#33A0DD" cor2="#0F76B8"/>
+  <!-- Form -->
+  <formHome squad="industria" redirect="industria" documento="dfe-2-industria" token="f92107608cab268f27d1"/>
   <!-- Blog -->
   <blog cor="#33A0DD"/>
   </div>
@@ -97,6 +99,7 @@
   import testimonial from '@/components/general/testimonial'
   import blog from '@/components/general/blog'
   import * as animationData from '../../../../assets/efeito/industria/data.json'
+  import formHome from '@/components/general/formHomes'
 
   export default {
     components: {
@@ -104,7 +107,8 @@
       count,
       caracteristicas,
       testimonial,
-      blog
+      blog,
+      formHome
     },
     data() {
         return {

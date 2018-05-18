@@ -2069,7 +2069,7 @@ a.btn-outline-success:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .hidden-md-up {
     display: none !important;
   }
@@ -2521,7 +2521,7 @@ position
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .hidden-md-up {
     display: none !important;
   }

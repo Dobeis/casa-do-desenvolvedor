@@ -11,8 +11,29 @@ import Escrituracao from '@/components/dfe/squads/escrituracao-fiscal'
 import Servicos from '@/components/dfe/squads/servicos'
 import Transporte from '@/components/dfe/squads/transporte'
 import Varejo from '@/components/dfe/squads/varejo'
+import Fintech from '@/components/dfe/squads/fintech'
 // Produtos ===========
+// Industria
 import NFe from '@/components/dfe/squads/industria/produtos/nfe'
+import MDFeIndustria from '@/components/dfe/squads/industria/produtos/mdfe'
+import GNRe from '@/components/dfe/squads/industria/produtos/gnre'
+import NotaSegura from '@/components/dfe/squads/industria/produtos/notasegura'
+import SaaS from '@/components/dfe/squads/industria/produtos/saas'
+// Varejo
+import NFCe from '@/components/dfe/squads/varejo/produtos/nfce'
+import CFe from '@/components/dfe/squads/varejo/produtos/cfe'
+// Serviço
+import NFSe from '@/components/dfe/squads/servicos/produtos/nfse'
+// Transporte
+import CTe from '@/components/dfe/squads/transporte/produtos/cte'
+import CTeOS from '@/components/dfe/squads/transporte/produtos/cteos'
+import MDFeTransporte from '@/components/dfe/squads/transporte/produtos/mdfe'
+// Escrituração Fiscal
+import EFDReinf from '@/components/dfe/squads/escrituracao-fiscal/produtos/efd-reinf'
+import Esocial from '@/components/dfe/squads/escrituracao-fiscal/produtos/esocial'
+import SPED from '@/components/dfe/squads/escrituracao-fiscal/produtos/sped'
+// Fintech
+import Boleto from '@/components/dfe/squads/fintech/produtos/boleto'
 
 // Outros =============
 import VueScrollTo from 'vue-scrollto'
@@ -32,6 +53,7 @@ Vue.use(VueScrollTo, {
 Vue.use(Router)
 
 const router = new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -75,9 +97,94 @@ const router = new Router({
       component: Varejo
     },
     {
+      path: '/squads/fintech',
+      name: 'Fintech',
+      component: Fintech
+    },
+    {
       path: '/squads/industria/nfe',
       name: 'NFe',
       component: NFe
+    },
+    {
+      path: '/squads/industria/mdfe',
+      name: 'MDFeIndustria',
+      component: MDFeIndustria
+    },
+    {
+      path: '/squads/industria/gnre',
+      name: 'GNRe',
+      component: GNRe
+    },
+    {
+      path: '/squads/industria/notasegura',
+      name: 'NotaSegura',
+      component: NotaSegura
+    },
+    {
+      path: '/squads/industria/saas',
+      name: 'SaaS',
+      component: SaaS
+    },
+    {
+      path: '/squads/varejo/nfce',
+      name: 'NFCe',
+      component: NFCe
+    },
+    {
+      path: '/squads/varejo/cfe',
+      name: 'CFe',
+      component: CFe
+    },
+    {
+      path: '/squads/varejo/nfe',
+      name: 'NFe',
+      component: NFe
+    },
+    {
+      path: '/squads/varejo/gnre',
+      name: 'GNRe',
+      component: GNRe
+    },
+    {
+      path: '/squads/servicos/nfse',
+      name: 'NFSe',
+      component: NFSe
+    },
+    {
+      path: '/squads/transporte/cte',
+      name: 'CTe',
+      component: CTe
+    },
+    {
+      path: '/squads/transporte/mdfe',
+      name: 'MDFeTransporte',
+      component: MDFeTransporte
+    },
+    {
+      path: '/squads/transporte/cteos',
+      name: 'CTeOS',
+      component: CTeOS
+    },
+    {
+      path: '/squads/escrituracao-fiscal/efdreinf',
+      name: 'EFDReinf',
+      component: EFDReinf
+    },
+    {
+      path: '/squads/escrituracao-fiscal/esocial',
+      name: 'Esocial',
+      component: Esocial
+    },
+    {
+      path: '/squads/escrituracao-fiscal/sped',
+      name: 'SPED',
+      component: SPED
+    },
+    {
+      path: '/squads/fintech/boleto',
+      name: 'Boleto',
+      component: Boleto
     }
   ]
 })

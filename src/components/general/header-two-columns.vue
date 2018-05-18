@@ -63,11 +63,11 @@ export default {
               background: -o-linear-gradient(left, ${cor1} 0%, ${cor2} 100%);
               background: linear-gradient(to right, ${cor1} 0%, ${cor2} 100%);
               background-size: cover;
-              min-height: 100vh;`
+              min-height: 100vh; background-repeat: no-repeat;`
       }
       return `background: url('${
         this.fundo
-      }'); background-size: cover; min-height: 100vh;`;
+      }'); background-size: cover; min-height: 100vh; background-repeat: no-repeat;`;
     },
     styleColor() {
       return `color: ${this.cor} !important;`

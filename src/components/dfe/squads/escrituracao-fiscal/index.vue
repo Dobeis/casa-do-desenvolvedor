@@ -5,7 +5,7 @@
                  squad="Escrituração Fiscal" 
                  cor="#69D66B" 
                  :imagem="defaultOptions" 
-                 fundo="./static/images/dfe/squads/gestao/hero.png"
+                 fundo="/static/images/dfe/squads/escrituracao-fiscal/hero.png"
                  scroll="#produtos" />
 
     <div class="bg-white spacer feature41" id="produtos">
@@ -56,23 +56,23 @@
                 <div class="col-md-7 ml-auto text-left">
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
-                            <img src="/static/images/dfe/squads/gestao/esocial.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInDown" />
+                            <img src="/static/images/dfe/squads/escrituracao-fiscal/esocial.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInDown" />
                             <p class="m-t-40 animated fadeIn">A espera acabou: o eSocial está em operação. Com a promessa de reduzir drasticamente a burocracia dos processos de RH, o projeto contempla mais de 40 eventos com diferentes layouts. Pois é, o eSocial é enorme! Mas não se preocupe: temos uma solução prontinha para o seu software!</p>
-                            <a class="btn btn-gestao-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22">
+                            <a class="btn btn-escrituracao-fiscal-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" href="/squads/escrituracao-fiscal/esocial">
                                 <span>Conheça <i class="ti-arrow-right"></i></span>
                             </a>
                         </div>
                         <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab"> 
-                            <img src="/static/images/dfe/squads/gestao/reinf.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInRight" />
+                            <img src="/static/images/dfe/squads/escrituracao-fiscal/reinf.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInRight" />
                             <p class="m-t-40 animated fadeIn">A EFD-Reinf contém a escrituração de rendimentos e retenções não relacionados à contratos de trabalho. Contempla informações que eram transmitidas pela DIRF, Guia de Recolhimento do FGTS e pela GFIP. Por ser muito abrangente, praticamente todo software de gestão precisará emitir a EFD-Reinf. Seu software está pronto?</p>
-                            <a class="btn btn-gestao-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22">
+                            <a class="btn btn-escrituracao-fiscal-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" href="/squads/escrituracao-fiscal/efdreinf">
                                 <span>Conheça <i class="ti-arrow-right"></i></span>
                             </a>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
-                            <img src="/static/images/dfe/squads/gestao/sped.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInUp" />
+                            <img src="/static/images/dfe/squads/escrituracao-fiscal/sped.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInUp" />
                             <p class="m-t-40 animated fadeIn">A EFD ICMS IPI, ou simplesmente Sped, é um arquivo de texto contendo informações sobre as operações do contribuinte durante todo o mês. Nele, constam todos os documentos fiscais emitidos, bem como registros de apuração de impostos. Com a nossa solução você implementa, sem esforço, a geração do Sped no seu software!</p>
-                            <a class="btn btn-gestao-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22">
+                            <a class="btn btn-escrituracao-fiscal-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" href="/squads/escrituracao-fiscal/sped">
                                 <span>Conheça <i class="ti-arrow-right"></i></span>
                             </a>
                         </div>
@@ -88,6 +88,8 @@
   <count cor="#69D66B"/>
   <!-- Testemunhos -->
   <testimonial cor1="#69D66B" cor2="#47AE4C"/>
+  <!-- Form -->
+  <formHome squad="escrituracao-fiscal" redirect="escrituracao-fiscal" documento="dfe-6-escrituracao-fiscal" token="0e503c64e64f372f27d7"/>
   <!-- Blog -->
   <blog cor="#69D66B"/>
   </div>
@@ -99,6 +101,7 @@
   import testimonial from '@/components/general/testimonial'
   import blog from '@/components/general/blog'
   import * as animationData from '../../../../assets/efeito/GP/data.json'
+  import formHome from '@/components/general/formHomes'
 
   export default {
     components: {
@@ -106,7 +109,8 @@
       count,
       caracteristicas,
       testimonial,
-      blog
+      blog,
+      formHome
     },
     data() {
         return {

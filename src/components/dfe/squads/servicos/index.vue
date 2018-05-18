@@ -5,7 +5,7 @@
                  squad="Serviços" 
                  cor="#61D0F7" 
                  :imagem="defaultOptions" 
-                 fundo="./static/images/dfe/squads/servico/hero.png"
+                 fundo="/static/images/dfe/squads/servico/hero.png"
                  scroll="#produtos" />
 
     <div class="bg-white spacer feature41" id="produtos">
@@ -40,7 +40,7 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <img src="/static/images/dfe/squads/servico/nfse.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInDown" />
                             <p class="m-t-40 op-8 animated fadeIn">Diferente do ICMS, que é um tributo estadual, o Imposto Sobre Serviços (ISS) é recolhido pelo município. Cada prefeitura tem autonomia para criar seu próprio webservice de NFS-e, com regras e exigências personalizadas. Com isso, a NFS-e ficou famosa como o documento mais caótico e complexo do SPED. É aí que entra a TecnoSpeed.</p>
-                            <a class="btn btn-servico-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22">
+                            <a class="btn btn-servico-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" href="/squads/servicos/nfse">
                                 <span>Conheça <i class="ti-arrow-right"></i></span>
                             </a>
                         </div>
@@ -56,6 +56,8 @@
   <count cor="#61D0F7"/>
   <!-- Testemunhos -->
   <testimonial cor1="#61D0F7" cor2="#27AAE1"/>
+  <!-- Form -->
+  <formHome squad="servico" redirect="servico" documento="dfe-4-servicos" token="54034362268d7bd1d9d3"/>
   <!-- Blog -->
   <blog cor="#61D0F7"/>
   </div>
@@ -67,6 +69,7 @@
   import testimonial from '@/components/general/testimonial'
   import blog from '@/components/general/blog'
   import * as animationData from '../../../../assets/efeito/servico/data.json'
+  import formHome from '@/components/general/formHomes'
 
   export default {
     components: {
@@ -74,7 +77,8 @@
       count,
       caracteristicas,
       testimonial,
-      blog
+      blog,
+      formHome
     },
     data() {
         return {

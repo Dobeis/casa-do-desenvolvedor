@@ -5,7 +5,7 @@
                  squad="Varejo" 
                  cor="#FFBC64" 
                  :imagem="defaultOptions" 
-                 fundo="./static/images/dfe/squads/varejo/hero.png"
+                 fundo="/static/images/dfe/squads/varejo/hero.png"
                  scroll="#produtos" />
 
     <div class="bg-white spacer feature41" id="produtos">
@@ -67,22 +67,22 @@
                         <div class="tab-pane fade show active" id="nfce" role="tabpanel" aria-labelledby="nfce-tab"> 
                             <img src="/static/images/dfe/squads/varejo/nfce.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInDown" />
                             <p class="m-t-40 animated fadeIn">Criada a partir do layout da NF-e modelo 55, a NFC-e é atualmente o projeto com maior aderência por parte dos estados brasileiros. Independente de hardware autorizador ou até mesmo homologação, a NFC-e é uma maravilha para o varejista. Com as soluções TecnoSpeed, é uma maravilha para o desenvolvedor também.</p>
-                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="/squads/varejo/nfce"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                         <div class="tab-pane fade" id="cfe" role="tabpanel" aria-labelledby="cfe-tab"> 
                             <img src="/static/images/dfe/squads/varejo/sat.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInRight" />
                             <p class="m-t-40 animated fadeIn">Desconfiados em relação ao modelo de contingência offline da NFC-e, os governos de São Paulo e Ceará optaram por colocar um equipamento no fluxo do documento eletrônico. Assim, surgiu o Cupom Fiscal eletrônico e seus respectivos acessórios: o SAT e o MFE.</p>
-                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="/squads/varejo/cfe"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                         <div class="tab-pane fade" id="nfe" role="tabpanel" aria-labelledby="nfe-tab"> 
                             <img src="/static/images/dfe/squads/varejo/nfe.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInUp" />
                             <p class="m-t-40 animated fadeIn">Nem toda operação de varejo gera cupom fiscal. Em vendas não-presenciais, por exemplo, mesmo que o destinatário seja consumidor final, o varejista deve emitir a NF-e modelo 55. Em casos de devolução do produto, também. Vendas acima de R$ 200 mil? NF-e. Não tem como fugir. Mas tudo bem: a gente te ajuda!</p>
-                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="/squads/varejo/nfe"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                         <div class="tab-pane fade" id="gnre" role="tabpanel" aria-labelledby="gnre-tab"> 
                             <img src="/static/images/dfe/squads/varejo/gnre.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInLeft" />
                             <p class="m-t-40 animated fadeIn">Com a regulamentação da Partilha do ICMS entre os estados, um número maior de empresas passou a ter que emitir a GNRE, conforme cada operação de venda interestadual é realizada. Automatize a geração da GNRE no seu sistema!</p>
-                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22"><span>Conheça <i class="ti-arrow-right"></i></span></a>
+                            <a class="btn btn-varejo-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="/squads/varejo/gnre"><span>Conheça <i class="ti-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -96,6 +96,9 @@
   <count cor="#FFBC64"/>
   <!-- Testemunhos -->
   <testimonial cor1="#FFBC64" cor2="#F39200"/>
+  <!-- Form -->
+  <formHome squad="varejo" redirect="varejo" documento="dfe-3-varejo" token="29d382048194f923f93a"/>
+    <!-- <div id="dfe-1-home-9745ef9bcdbca85782c8"></div> -->
   <!-- Blog -->
   <blog cor="#FFBC64"/>
   </div>
@@ -106,6 +109,7 @@
   import caracteristicas from '@/components/general/caracteristicas'
   import testimonial from '@/components/general/testimonial'
   import blog from '@/components/general/blog'
+  import formHome from '@/components/general/formHomes'
   import * as animationData from '../../../../assets/efeito/varejo/data.json'
 
   export default {
@@ -114,7 +118,8 @@
       count,
       caracteristicas,
       testimonial,
-      blog
+      blog,
+      formHome
     },
     data() {
         return {

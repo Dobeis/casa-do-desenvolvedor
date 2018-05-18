@@ -1,28 +1,356 @@
 <template>
-  <div class="topbar">
+  <!-- <div class="topbar">
       <div class="header5">
           <div class="container po-relative">
               <nav class="navbar navbar-expand-lg h5-nav-bar">
-                  <a href="javascript:void(0)" class="navbar-brand"><img src="../../assets/images/home/logo.png" alt="wrapkit"/></a>
+                  <a href="javascript:void(0)" class="navbar-brand"><img src="../../../ass/g../eneralets/general/images/home/logo.png" alt="wrapkit"/></a>
                   <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#h5-info" aria-controls="h4-info" aria-expanded="false" aria-label="Toggle navigation"><span class="ti-menu"></span></button>
-                  <div class="collapse navbar-collapse text-uppercase" id="h5-info">
+                  <div class="collapse navbar-collapse" id="h5-info">
                       <ul class="navbar-nav ml-auto">
-                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Documentação fiscal</a></li>
-                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Gestão Financeira</a></li>
-                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Certificação digital</a></li>
-                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Mobile</a></li>
-                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Capacitação</a></li>
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Documentos Fiscais</a></li>
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Fintech</a></li>
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">PlugMobile</a></li>
                           <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Suporte</a></li>
-                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Institucional</a></li>
                       </ul>
                   </div>
               </nav>
           </div>
       </div>
+  </div> -->
+  <div class="topbar" id="top">
+    <div class="header6">
+      <div class="container po-relative">
+        <nav class="navbar navbar-expand-lg h6-nav-bar">
+          <a href="/" class="navbar-brand">
+            <img src="/static/images/home/logo.png" alt="wrapkit" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#h6-info" aria-controls="h6-info" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="ti-menu"></span>
+          </button>
+          <div class="collapse navbar-collapse hover-dropdown font-14 ml-auto" id="h6-info">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown mega-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="h6-mega-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Documentos Fiscais
+                  <i class="fa fa-angle-down m-l-5"></i>
+                </a>
+                <div class="dropdown-menu b-none font-14 animated fadeInUp" aria-labelledby="h6-mega-dropdown">
+                  <div class="row">
+                    <div class="col-lg-3 inside-bg hidden-md-down">
+                      <div class="bg-img img-fluid" style="background-image:url(/static/images/home/banner-navbar.jpg); width: 275px;">
+                        <!-- <h3 class="text-white font-light">Manager SaaS</h3> -->
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                      <ul class="list-style-none">
+                        <li>
+                          <h6 class="nav-title-link">Qual segmento seu software atende?</h6>
+                        </li>
+                        <li>
+                          <a href="/squads/industria">Indústria</a>
+                        </li>
+                        <li>
+                          <a href="/squads/varejo" target="_blank">Varejo</a>
+                        </li>
+                        <li>
+                          <a href="/squads/servicos" target="_blank">Serviços</a>
+                        </li>
+                        <li>
+                          <a href="/squads/transporte" target="_blank">Transporte</a>
+                        </li>
+                        <li>
+                          <a href="/squads/escrituracao-fiscal" target="_blank">Escrituração</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <ul class="list-style-none">
+                        <li>
+                          <h6 class="nav-title-link" style="margin-left: 13px;">Já sabe do que precisa? <br> Então, é só escolher!</h6>
+                        </li>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <li><a href="/squads/industria/nfe">NF-e</a></li>
+                            <li><a href="/squads/varejo/nfce">NFC-e</a></li>
+                            <li><a href="/squads/servicos/nfse">NFS-e</a></li>
+                            <li><a href="/squads/transporte/cte">CT-e</a></li>
+                            <li><a href="/squads/transporte/mdfe">MDF-e</a></li>
+                          </div>
+                          <div class="col-md-6">
+                            <li><a href="/squads/varejo/cfe">CF-e SAT</a></li>
+                            <li><a href="/squads/varejo/cfe">CF-e MFE</a></li>
+                            <li><a href="/squads/escrituracao-fiscal/esocial">eSocial</a></li>
+                            <li><a href="/squads/escrituracao-fiscal/efdreinf">EFD-Reinf</a></li>
+                            <li><a href="/squads/escrituracao-fiscal/sped">SPED Fiscal <span class="badge badge-success">Novo</span></a></li>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <ul class="list-style-none">
+                        <li>
+                          <h6 class="nav-title-link">Turbine ainda mais o seu software!</h6>
+                        </li>
+                        <li>
+                          <a href="/squads/industria/saas" target="_blank">Manager SaaS</a>
+                        </li>
+                        <li>
+                          <a href="/squads/industria/notasegura" target="_blank">Nota Segura</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown mega-dropdown">
+                <a class="nav-link dropdown-toggle" href="/squads/fintech" id="h6-mega-dropdown2" aria-haspopup="true"
+                  aria-expanded="false">
+                  Fintech
+                  <!-- <i class="fa fa-angle-down m-l-5"></i> -->
+                </a>
+                <!-- <div class="dropdown-menu b-none font-14 animated fadeInUp" aria-labelledby="h6-mega-dropdown2">
+                  <div class="row">
+                    <div class="col-lg-4 inside-bg hidden-md-down">
+                      <div class="bg-img" style="background-image:url(/static/general/images/innerpage/mega-bg2.jpg)">
+                        <h3 class="text-white font-light">Create anything
+                          <br/>with our amazing
+                          <br/>sections</h3>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4">
+                      <ul class="list-style-none">
+                        <li>
+                          <h6>Headers &amp; Footers</h6>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/sliders-static.html" target="_blank">Banners</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/form-banners.html" target="_blank">Form Banners</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/headers1.html" target="_blank">Navigation 1-10</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/headers2.html" target="_blank">Navigation 11-20</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/footers.html" target="_blank">Footers</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/call-to-action.html" target="_blank">Call to Actions</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-1 col-md-4">
+                      <ul class="list-style-none">
+                        <li>
+                          <h6>Sliders</h6>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/slider1.html" target="_blank">Slider1</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/slider2.html" target="_blank">Slider2</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/slider3.html" target="_blank">Slider3</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/slider4.html" target="_blank">Slider4</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/slider5.html" target="_blank">Slider5</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-1 col-md-4">
+                      <ul class="list-style-none">
+                        <li>
+                          <h6>&nbsp;</h6>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/slider6.html" target="_blank">Slider6</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/slider7.html" target="_blank">Slider7</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/slider8.html" target="_blank">Slider8</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/slider9.html" target="_blank">Slider9</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/slider10.html" target="_blank">Slider10</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <ul class="list-style-none">
+                        <li>
+                          <h6>Other Sections</h6>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/contacts-forms.html" target="_blank">Contacts</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/blog-homepage.html" target="_blank">Blogs</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/pricing.html" target="_blank">Pricing</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/ui-custom-modals.html" target="_blank">Popups / Modals</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/team.html" target="_blank">Teams</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/testimonial.html" target="_blank">Testimonials</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <ul class="list-style-none">
+                        <li>
+                          <h6>Features</h6>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/feature1.html" target="_blank">Features 1-10</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/feature2.html" target="_blank">Features 11-20</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/feature3.html" target="_blank">Features 21-30</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/feature4.html" target="_blank">Features 31-40</a>
+                        </li>
+                        <li>
+                          <a href="../../wrapki/generalt/feature5.html" target="_blank">Features 41-50</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div> -->
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://www.plugmobile.com.br" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  PlugMobile
+                  <!-- <i class="fa fa-angle-down m-l-5"></i> -->
+                </a>
+                <!-- <ul class="b-none dropdown-menu font-14 animated fadeInUp">
+                  <li>
+                    <a class="dropdown-item" href="../../wrapki/generalt/pages-aboutus.html" target="_blank">About Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../wrapki/generalt/pages-pricing.html" target="_blank">Pricing</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../wrapki/generalt/pages-services.html" target="_blank">Services</a>
+                  </li>
+                  <li class="divider" role="separator"></li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-toggle dropdown-item" href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">Portfolio
+                      <i class="fa fa-angle-right ml-auto"></i>
+                    </a>
+                    <ul class="dropdown-menu font-14 b-none animated flipInY">
+                      <li>
+                        <a class="dropdown-item" href="../../wrapki/generalt/pages-portfolio-one-column.html" target="_blank">Portfolio 1 Column</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../../wrapki/generalt/pages-portfolio-two-column.html" target="_blank">Portfolio 2 Column</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../../wrapki/generalt/pages-portfolio-three-column.html" target="_blank">Portfolio 3 Column</a>
+                      </li>
+                      <li class="divider" role="separator"></li>
+                      <li>
+                        <a class="dropdown-item" href="../../wrapki/generalt/pages-portfolio-masonry.html" target="_blank">Portfolio with Masonry</a>
+                      </li>
+                      <li class="divider" role="separator"></li>
+                      <li>
+                        <a class="dropdown-item" href="../../wrapki/generalt/pages-portfolio-with-popup.html" target="_blank">Portfolio with Popup</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../../wrapki/generalt/pages-portfolio-detail.html" target="_blank">Portfolio Detail</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../wrapki/generalt/pages-portfolio-detail.html" target="_blank">Portfolio Detail</a>
+                  </li>
+                  <li class="divider" role="separator"></li>
+                  <li>
+                    <a class="dropdown-item" href="../../wrapki/generalt/pages-blog.html" target="_blank">Blog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../wrapki/generalt/pages-blog-detail.html" target="_blank">Blog Single</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../wrapki/generalt/pages-contact-us.html" target="_blank">Contact Us</a>
+                  </li>
+                </ul> -->
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Suporte
+                  <i class="fa fa-angle-down m-l-5"></i>
+                </a>
+                <ul class="b-none dropdown-menu font-14 animated fadeInUp">
+                  <li class="dropdown-submenu">
+                    <!-- <a class="dropdown-toggle dropdown-item" href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">Shop Listing
+                      <i class="fa fa-angle-right ml-auto"></i>
+                    </a>
+                    <ul class="dropdown-menu menu-right font-14 b-none animated flipInY">
+                      <li>
+                        <a class="dropdown-item font-medium">With Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="shop-listing-2-column-sidebar.html" target="_blank">2 Columns</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="shop-listing-3-column-sidebar.html" target="_blank">3 Columns</a>
+                      </li>
+                      <li class="divider" role="separator"></li>
+                      <li>
+                        <a class="dropdown-item font-medium">Without Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="shop-listing-3-column-nosidebar.html" target="_blank">3 Columns</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="shop-listing-4-column-nosidebar.html" target="_blank">4 Columns</a>
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="http://atendimento.tecnospeed.com.br" target="_blank">Atendimento Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="https://clientes.tecnospeed.com.br/" target="_blank">Portal do Cliente</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
   </div>
 </template>
 
 <style>
+.topbar .nav-title-link {
+  font-family: 'GothamRnd-Book', sans-serif;
+}
 .h5-nav-bar {
   padding: 25px 15px;
   position: relative;
@@ -34,7 +362,7 @@
 }
 .h5-nav-bar .navbar-nav .nav-link {
   color: #ffffff;
-  font-size: 10px;
+  font-size: 14px;
   padding: 20px 10px;
   font-weight: 500;
 }
@@ -48,7 +376,7 @@
   border: 2px solid #ff4d7e;
   position: absolute;
   right: 0px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
   font-size: 14px;
 }
 .h5-nav-bar .rounded-button a {
@@ -57,6 +385,10 @@
 }
 .h5-nav-bar .rounded-button a:hover {
   color: #ff4d7e;
+}
+
+.mega-dropdown .inside-bg {
+    margin: -30px 40px -30px -45px;
 }
 
 @media (max-width: 1023px) {
@@ -74,5 +406,10 @@
   .h5-nav-bar .rounded-button {
     position: relative;
   }
+}
+@media (max-width: 767px) {
+  .topbar #h6-info {
+    background: #343a40;
+  }  
 }
 </style>

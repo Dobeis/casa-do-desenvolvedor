@@ -7,15 +7,15 @@
           <slide>
             <div class="item">
               <div class="quote-bg">
-                <h3 class="font-light text-white">WrapKit has given our websites huge national presence.We are #1 on page one in Google search results for
+                <h3 :class="{ 'font-light': true, 'text-white': !text === 'gray' || text === undefined, 'op-5': text === 'gray' }">WrapKit has given our websites huge national presence.We are #1 on page one in Google search results for
                   every website we’ve built, and rank for more keywords than I ever expected in a very competitive, high-value
                   customer industry. In addition</h3>
               </div>
               <div class="customer-thumb">
                 <img src="../../assets/general/images/testimonial/1.jpg" alt="wrapkit" class="circle" />
               </div>
-              <h6 class="text-white m-b-0 font-medium">Michael Anderson</h6>
-              <span class="text-white">Project client</span>
+              <h6 class="text-white m-b-0 font-medium" :style="nomeColor">Michael Anderson</h6>
+              <span class="text-white" :style="cargoColor">Project client</span>
             </div>
           </slide>
           <!-- item -->
@@ -30,7 +30,10 @@ import { Carousel, Slide } from "vue-carousel";
 export default {
   props: {
     cor1: String,
-    cor2: String
+    cor2: String,
+    text: String,
+    nameC: String,
+    cargoC: String
   },
   name: "testimonial",
   components: {
@@ -38,14 +41,23 @@ export default {
     Slide
   },
   computed: {
-    gradientSquad() {
-    
+    gradientSquad() {      
       return `background: ${this.cor1};
               background: -webkit-linear-gradient(legacy-direction(to right), ${this.cor1} 0%, ${this.cor2} 100%);
               background: -webkit-gradient(linear, left top, right top, from(${this.cor1}), to(${this.cor2}));
               background: -webkit-linear-gradient(left, ${this.cor1} 0%, ${this.cor2} 100%);
               background: -o-linear-gradient(left, ${this.cor1} 0%, ${this.cor2} 100%);
               background: linear-gradient(to right, ${this.cor1} 0%, ${this.cor2} 100%);`
+    },
+    nomeColor() {
+      if (this.nameC !== undefined) {
+        return 'color: #202069 !important;'
+      }
+    },
+    cargoColor() {
+      if (this.cargoC !== undefined) {
+        return 'color: #E44188 !important;'
+      }      
     }
   }
 };

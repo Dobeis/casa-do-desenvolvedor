@@ -5,7 +5,7 @@
                  squad="Transporte" 
                  cor="#2F73A5" 
                  :imagem="defaultOptions" 
-                 fundo="./static/images/dfe/squads/transporte/hero.png"
+                 fundo="/static/images/dfe/squads/transporte/hero.png"
                  scroll="#produtos" />
 
     <div class="bg-white spacer feature41" id="produtos">
@@ -58,21 +58,21 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
                             <img src="/static/images/dfe/squads/transporte/cte.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInDown" />
                             <p class="m-t-40 animated fadeIn">O Conhecimento de Transporte Eletrônico deve ser emitido por transportadoras de carga. No CT-e, a transportadora deve identificar as NF-es referentes aos produtos transportados naquela operação. Aceita os modais: Rodoviário, Aquaviário, Ferroviário e Dutoviário. Nossa solução já tem todos eles!</p> 
-                            <a class="btn btn-transporte-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22">
+                            <a class="btn btn-transporte-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="/squads/transporte/cte">
                                 <span>Conheça <i class="ti-arrow-right"></i></span>
                             </a>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
                             <img src="/static/images/dfe/squads/transporte/mdfe.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInRight" />
                             <p class="m-t-40 animated fadeIn">O Manifesto dos Documentos Fiscais eletrônicos não recolhe impostos. Sua finalidade é agilizar a fiscalização nas barreiras interestaduais, mas sua ausência ainda acarreta multas. No MDF-e, o transportador informa todos os CT-es e NF-es contidos naquele veículo. Conheça nossas soluções para o MDF-e!</p> 
-                            <a class="btn btn-transporte-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22">
+                            <a class="btn btn-transporte-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="/squads/transporte/mdfe">
                                 <span>Conheça <i class="ti-arrow-right"></i></span>
                             </a>
                         </div>
                         <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab"> 
                             <img src="/static/images/dfe/squads/transporte/cteos.jpg" alt="wrapkit" class="rounded img-fluid animated bounceInUp" />
                             <p class="m-t-40 animated fadeIn">Substituto da Nota Fiscal de Serviço de Transporte, o CT-e para Outros Serviços acoberta operações de transporte fretadi de pessoas, excesso de bagagem, valores, entre outros serviços não atingidos pelo CT-e tradicional. Nossa solução para o CT-e OS já está pronta e funcionando! Venha conhecer!</p> 
-                            <a class="btn btn-transporte-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="#f22">
+                            <a class="btn btn-transporte-gradiant btn-md btn-rounded btn-arrow m-t-20 animated fadeIn" data-toggle="collapse" href="/squads/transporte/cteos">
                                 <span>Conheça <i class="ti-arrow-right"></i></span>
                             </a>
                         </div>
@@ -88,6 +88,8 @@
   <count cor="#2F73A5"/>
   <!-- Testemunhos -->
   <testimonial cor1="#2F73A5" cor2="#174F81"/>
+  <!-- Form -->
+  <formHome squad="transporte" redirect="transporte" documento="dfe-5-transporte" token="0286349df51cfa71df62"/>
   <!-- Blog -->
   <blog cor="#2F73A5"/>
   </div>
@@ -99,6 +101,7 @@
   import testimonial from '@/components/general/testimonial'
   import blog from '@/components/general/blog'
   import * as animationData from '../../../../assets/efeito/transporte/data.json'
+  import formHome from '@/components/general/formHomes'
 
   export default {
     components: {
@@ -106,7 +109,8 @@
       count,
       caracteristicas,
       testimonial,
-      blog
+      blog,
+      formHome
     },
     data() {
         return {

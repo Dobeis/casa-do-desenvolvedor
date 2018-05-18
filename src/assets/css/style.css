@@ -816,11 +816,15 @@ Text Colors
   color: linear-gradient(90deg, #33a0dd, #0f76b8);
 }
 
+.text-saas {
+  color: #64C29D;
+}
+
 .text-varejo-soft {
   color: #ffbc64;
 }
 .text-varejo {
-  color: #f39200;
+  color: #f39200 !important;
 }
 .text-varejo-gradiant {
   color: linear-gradient(90deg, #ffbc64, #f39200);
@@ -846,14 +850,24 @@ Text Colors
   color: linear-gradient(90deg, #2f73a5, #174f81);
 }
 
-.text-gestao-soft {
-  color: #69d66b;
+.text-escrituracao-fiscal-soft {
+  color: #69d66b !important;
 }
-.text-gestao {
-  color: #47ae4c;
+.text-escrituracao-fiscal {
+  color: #47ae4c !important;
 }
-.text-gestao-gradiant {
+.text-escrituracao-fiscal-gradiant {
   color: linear-gradient(90deg, #69d66b, #47ae4c);
+}
+
+.text-fintech-soft {
+  color: #E44188 !important;
+}
+.text-fintech {
+  color: #4442B2 !important;
+}
+.text-fintech-gradiant {
+  color: linear-gradient(90deg, #E44188, #4442B2, #202069);
 }
 /* SQUADS */
 
@@ -1131,6 +1145,28 @@ Background Colors
   background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
   background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
   background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+}
+
+.bg-boleto-gradiant {
+  background: #E44188;
+  background: -webkit-linear-gradient(
+    legacy-direction(to bottom),
+    #E44188 30%,
+    #4442B2 80%,
+    #202069 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    bottom,
+    bottom,
+    from(#E44188),
+    to(#4442B2)
+  );
+  background: -webkit-linear-gradient(bottom, #E44188 30%, #4442B2 80%, #202069 100%);
+  background: -o-linear-gradient(bottom, #E44188 30%, #4442B2 80%, #202069 100%);
+  background: linear-gradient(to bottom, #E44188 30%, #4442B2 80%, #202069 100%);
+  background: linear-gradient(to bottom, #E44188 30%, #4442B2 80%, #202069 100%);
+  /* background: linear-gradient(to bottom, #E44188 0%, #4442B2 60%, #fff 40%); */
 }
 
 .bg-danger-gradiant {
@@ -1668,6 +1704,18 @@ Buttons
   border: 1px solid #2cdd9b;
 }
 
+.btn-saas,
+.btn-saas.disabled {
+  background: #64C29D;
+  border: 1px solid #64C29D;
+}
+
+.btn-boleto,
+.btn-boleto.disabled {
+  background: #E44188;
+  border: 1px solid #E44188;
+}
+
 .btn-success:hover,
 .btn-success.disabled:hover {
   background: #1dc8cd;
@@ -1923,7 +1971,48 @@ Buttons
   border: 0px;
 }
 
-.btn-industria-gradiant:hover {
+.btn-saas-gradiant {
+  background: #64C29D;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right),
+    #64C29D 0%,
+    #64C29D 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#64C29D),
+    to(#64C29D)
+  );
+  background: -webkit-linear-gradient(left, #64C29D 0%, #64C29D 100%);
+  background: -o-linear-gradient(left, #64C29D 0%, #64C29D 100%);
+  background: linear-gradient(to right, #64C29D 0%, #64C29D 100%);
+  border: 0px;
+}
+
+.btn-boleto-gradiant {
+  background: #E44188;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right top),
+    #E44188 0%,
+    #4442B2 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    right top,
+    right top,
+    from(#E44188),
+    to(#4442B2)
+  );
+  background: -webkit-linear-gradient(top right, #E44188 0%, #4442B2 100%);
+  background: -o-linear-gradient(top right, #E44188 0%, #4442B2 100%);
+  background: linear-gradient(to right top, #E44188 0%, #4442B2 100%);
+  border: 0px;
+}
+
+
+/* .btn-industria-gradiant:hover {
   background: #0f76b8;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
@@ -1940,6 +2029,27 @@ Buttons
   background: -webkit-linear-gradient(left, #0f76b8 0%, #33a0dd 100%);
   background: -o-linear-gradient(left, #0f76b8 0%, #33a0dd 100%);
   background: linear-gradient(to right, #0f76b8 0%, #33a0dd 100%);
+} */
+
+.btn-fintech-gradiant {
+  background: #E44188;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right),
+    #E44188 50%,
+    #4442B2 80%,
+    #202069 100%    
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#E44188),
+    to(#202069)
+  );
+  background: -webkit-linear-gradient(left, #E44188 0%, #4442B2 50%, #202069 100%);
+  background: -o-linear-gradient(left, #E44188 0%, #4442B2 50%, #202069 100%);
+  background: linear-gradient(to right, #E44188 0%, #4442B2 50%, #202069 100%);
+  border: 0px;
 }
 
 .btn-varejo-gradiant {
@@ -2088,7 +2198,7 @@ Buttons
   background: linear-gradient(to right, #174f81 0%, #2f73a5 100%);
 }
 
-.btn-gestao-gradiant {
+.btn-escrituracao-fiscal-gradiant {
   background: #69d66b;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
@@ -2108,7 +2218,7 @@ Buttons
   border: 0px;
 }
 
-.btn-gestao-gradiant:hover {
+.btn-escrituracao-fiscal-gradiant:hover {
   background: #47ae4c;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
@@ -2587,7 +2697,7 @@ a.btn-outline-success:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .hidden-md-up {
     display: none !important;
   }
@@ -3050,7 +3160,7 @@ position
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .hidden-md-up {
     display: none !important;
   }

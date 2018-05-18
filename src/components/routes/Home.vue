@@ -1,7 +1,9 @@
 <template>
+<div class="page-home">
+
   <div class="page-wrapper">
     <div class="container-fluid">
-      <div class="header-principal">
+      <!-- <div class="header-principal">
         <div class="image-middle">
           <img src="../../assets/images/home/casa-do-desenvolvedor.png" alt="" class="img-fluid mx-auto">
         </div>
@@ -10,7 +12,7 @@
             <img src="../../assets/images/home/more.png" alt="" class="img-fluid mx-auto">
           </a>
         </div>
-      </div>
+      </div> -->
       <!-- <div class="static-slider7">
         <div class="container">
           <div class="row justify-content-center ">
@@ -27,6 +29,27 @@
           </div>
         </div>
       </div> -->
+
+      <div class="home-header">
+        <div class="conteudo">
+          <div class="left">
+            <div class="titulo">
+              <h2 class="text-servico">Bem-vindo(a) à sua casa, <strong>Desenvolvedor(a)</strong></h2>
+              <div class="botoes m-t-40">
+                  <a class="btn btn-white btn-rounded btn-md btn-arrow text-blue show-mobile" data-animation="animated fadeInLeft" data-toggle="collapse" href="#" v-scroll-to="'#feature'"> 
+                    <span>CONHEÇA <i class="ti-arrow-down"></i></span> 
+                  </a>
+                  <a class="btn btn-servico-gradiant btn-rounded btn-md btn-arrow text-white hide-mobile" data-animation="animated fadeInLeft" data-toggle="collapse" href="#" v-scroll-to="'#feature'"> 
+                    <span>CONHEÇA <i class="ti-arrow-down"></i></span> 
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img src="/static/images/home/computer.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>      
       <!-- ============================================================== -->
       <!-- End Static Slider 1  -->
       <!-- ============================================================== -->
@@ -75,7 +98,7 @@
                   </div>
                   <div class="align-self-center">
                     <h5 class="font-medium">
-                      <a href="#/dfe" class="linking">Documentação fiscal
+                      <a href="/dfe" class="linking">Documentação fiscal
                         <i class="ti-arrow-right"></i>
                       </a>
                     </h5>
@@ -181,7 +204,8 @@
       <!-- End Blog -->
       <!-- ============================================================== -->
     </div>
-  </div>  
+  </div>    
+</div>
 </template>
 
 <script>
@@ -221,8 +245,53 @@ export default {
 </script>
 
 <style>
+.page-home .botoes {
+  text-align: left;
+}
+.page-home .show-mobile {
+    display: none;
+}
+.page-home .hide-mobile {
+    display: initial;
+}
+.page-home .home-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.header-principal {
+  background: url(/static/images/home/seta.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.page-home .home-header .conteudo {
+  display: flex;
+  width: 100%;
+}
+
+.page-home .home-header .conteudo .left {
+  margin-right: auto;
+  margin-left: 400px;
+  margin-top: 170px;
+}
+
+.page-home .home-header .conteudo .left h2 {
+  width: 70%;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.page-home .home-header .conteudo .right {
+  margin-left: auto;
+  padding-left: 100px;
+}
+.page-home .home-header .conteudo .right img {
+  width: 80%;
+}
+
+.page-home .header-principal {
   background: url(../../assets/images/home/banner-home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,18 +304,18 @@ export default {
   flex-direction: column;
 }
 
-.header-principal .image-middle {
+.page-home .header-principal .image-middle {
   width: 40%;
   margin: auto;
   padding-top: 200px;
 }
-.header-principal .info-bottom {
+.page-home .header-principal .info-bottom {
   width: 60px;
   margin-top: auto;
   margin-bottom: 100px;
 }
 
-.mais-informacoes {
+.page-home .mais-informacoes {
   margin: auto;
   margin-top: auto;
   max-width: 50px;
@@ -255,12 +324,12 @@ export default {
 slide 3
 *******************/
 
-.thumb {
+.page-home .thumb {
   position: relative;
   /* display: flex; */
 }
 
-.botao-play {
+.page-home .botao-play {
   /* margin: auto; */
   position: absolute;
   left: 50%;
@@ -268,10 +337,10 @@ slide 3
   /* margin-top: auto; */
 }
 
-.botao-play img {
+.page-home .botao-play img {
   width: 50%;
 }
-.botao-play img:empty {
+.page-home .botao-play img:empty {
   top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -281,20 +350,20 @@ slide 3
 	transform: translate(-50%, -50%);
 }
 
-.video-img {
+.page-home .video-img {
   -webkit-animation-delay: 1.3s;
   animation-delay: 1.3s;
 }
 
-.video-img {
+.page-home .video-img {
   cursor: pointer;
 }
 
-.bs-slider-overlay {
+.page-home .bs-slider-overlay {
   background: rgba(32, 35, 43, 0.8);
 }
 
-.slider-control span {
+.page-home .slider-control span {
   width: 53px;
   height: 53px;
   line-height: 53px;
@@ -303,7 +372,7 @@ slide 3
   border: 1px solid #ffffff;
 }
 
-label {
+.page-home label {
   line-height: 27px;
   border-radius: 0;
   color: #263238;
@@ -311,26 +380,26 @@ label {
   animation-delay: 0.5s;
 }
 
-h2 {
+.page-home h2 {
   line-height: 42px;
   font-size: 36px;
 }
 
-p {
+.page-home p {
   line-height: 24px;
   font-weight: 400;
 }
 
-i.icon-Play-Music {
+.page-home i.icon-Play-Music {
   font-size: 32px;
 }
 
 @media (max-width: 1280px) {
-  .slide-image {
+  .page-home .slide-image {
     height: 550px;
     width: auto !important;
   }
-  .slider-control span {
+  .page-home .slider-control span {
     width: 44px;
     height: 44px;
     line-height: 44px;
@@ -338,77 +407,83 @@ i.icon-Play-Music {
 }
 
 @media (max-width: 1100px) {
-  h2 {
+  .page-home h2 {
     font-size: 34px;
   }
-  .slide-image {
+  .page-home .slide-image {
     left: -20%;
     position: relative;
   }
-  .slide-text {
+  .page-home .slide-text {
     width: 80% !important;
   }
 }
 
 @media (max-width: 767px) {
-  .slider-control span {
+  .page-home .show-mobile {
+      display: initial;
+  }
+  .page-home .hide-mobile {
+      display: none;
+  }
+  .page-home .slider-control span {
     width: 34px;
     height: 34px;
     line-height: 34px;
   }
-  .slide-text {
+  .page-home .slide-text {
     padding: 0 !important;
     width: 80% !important;
   }
-  h2 {
+  .page-home h2 {
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 30px;
   }
-  .slide-image {
+  .page-home .slide-image {
     left: 0;
     height: 300px;
   }
-  .btn {
+  .page-home .btn {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .btn.btn-md {
+  .page-home .btn.btn-md {
     padding-left: 25px;
     padding-right: 25px;
   }
-  .btn-pad {
+  .page-home .btn-pad {
     padding-right: 0;
   }
 }
 
 @media (max-width: 428px) {
-  .slider-control span {
+  .page-home .slider-control span {
     width: 26px;
     height: 26px;
     line-height: 26px;
     font-size: 12px !important;
   }
-  h2 {
+  .page-home h2 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 20px;
   }
-  i.icon-Play-Music {
+  .page-home i.icon-Play-Music {
     font-size: 26px;
   }
-  a.btn-md {
+  .page-home a.btn-md {
     text-align: center;
     margin-bottom: 10px;
   }
-  .slide-image {
+  .page-home .slide-image {
     left: -75%;
     height: 380px;
   }
-  .btn {
+  .page-home .btn {
     padding-left: 0;
   }
-  video {
+  .page-home video {
     width: 160%;
   }
 }
@@ -418,15 +493,78 @@ i.icon-Play-Music {
 /* Responsive style */
 
 @media(max-width:767px) {
-  .header-principal .image-middle {
+  .page-home .botoes {
+    text-align: center;
+  }
+  .page-home .header-principal .image-middle {
     width: 90%;
     margin: auto;
     padding-top: 200px;
   }
-  .header-principal .info-bottom {
+  .page-home .header-principal .info-bottom {
     width: 40px;
     margin-top: auto;
     margin-bottom: 100px;
   }
+  .page-home .home-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      background: #61d0f7;
+      background: -webkit-linear-gradient(
+        legacy-direction(to right),
+        #61d0f7 0%,
+        #27aae1 100%
+      );
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#61d0f7),
+        to(#27aae1)
+      );
+      background: -webkit-linear-gradient(left, #61d0f7 0%, #27aae1 100%);
+      background: -o-linear-gradient(left, #61d0f7 0%, #27aae1 100%);
+      background: linear-gradient(to right, #61d0f7 0%, #27aae1 100%);
+      border: 0px;
+  }  
+.page-home .home-header .conteudo .left {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+}  
+.page-home .home-header .conteudo .left h2 {
+    width: 100%;
+    font-size: 35px;
+    line-height: 40px;
+    color: #fff;
+    padding: 10px;
+}
+.page-home .home-header .conteudo .right {
+    margin-left: 0;
+    padding-left: 0px;
+}
+}
+@media (min-width: 1000px) and (max-width: 1440px) {
+  .page-home .home-header .conteudo .left {
+      margin-right: auto;
+      margin-left: 200px;
+      margin-top: 80px;
+  }  
+.page-home .home-header .conteudo .left h2 {
+    width: 80%;
+    font-size: 50px;
+    line-height: 60px;
+}  
 }
 </style>

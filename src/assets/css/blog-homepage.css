@@ -113,7 +113,7 @@ Blog homepage 4
   color: #263238;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1000px) and (max-width: 1024px) {
   .card-columns {
     -webkit-column-count: 2;
     -moz-column-count: 2;

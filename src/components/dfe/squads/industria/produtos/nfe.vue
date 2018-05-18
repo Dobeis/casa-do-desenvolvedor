@@ -2,10 +2,10 @@
     <div class="produtos-nfe">
         <header-top produto="Nota Fiscal Eletrônica"
                     subtitulo="Projetos de software para indústria são complexos. Documentos fiscais eletrônicos, também. Desse segundo, a gente cuida para você."
-                    squad="Indústria" 
+                    squad="industria" 
                     cor="#33A0DD" 
                     :imagem="defaultOptions" 
-                    fundo="./static/images/dfe/squads/industria/hero.png"
+                    fundo="/static/images/dfe/squads/industria/hero.png"
                     scroll="#inicio" />
 
         <div class="spacer feature32" id="inicio">
@@ -43,9 +43,9 @@
                     <div class="wrap-feature6-box shadow">
                         <div class="card text-white" data-aos="fade-down" data-aos-duration="1200">
                             <div class="card-body">
-                                <h6 class="font-medium text-gestao op-7">Manager SaaS</h6>
+                                <h6 class="font-medium text-escrituracao-fiscal op-7">Manager SaaS</h6>
                                 <p class="m-t-20 op-5">API Web com integração via HTTP, HTTPS ou troca de arquivos TXT e XML em pastas.</p>
-                                <a  href="#" v-scroll-to="'#manager-nfe'" class="linking op-5"><span class="text-gestao">Conheça</span> <i class="ti-arrow-right"></i></a>
+                                <a  href="#" v-scroll-to="'#manager-nfe'" class="linking op-5"><span class="text-escrituracao-fiscal">Conheça</span> <i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                 
                 <div class="right text-white">
                     <div class="with-text text-right">
-                        <h2 class="m-b-30 text-gestao">Manager SaaS</h2>
+                        <h2 class="m-b-30 text-escrituracao-fiscal">Manager SaaS</h2>
                         <p class="text-white op-7">O Manager SaaS é uma API em nuvem que gerencia e executa todos os processos de emissão da NF-e, desde a geração do xml até a impressão do documento auxiliar.</p>
                         <p class="text-white op-7">Além da NF-e, o Manager SaaS permite gerenciar e emitir os documentos NFC-e, NFS-e, CT-e, MDF-e, CF-e SAT, CF-e MFE e GNRE.</p>
                         <p class="text-white op-7">Para utilizar, basta fornecer os parâmetros para preenchimento da NF-e, e o Manager SaaS faz todo o restante do processo para você! Seu software pode se comunicar com o Manager SaaS através de requisições https ou troca de arquivos em pastas.</p>
@@ -172,7 +172,7 @@
         <div class="spacer imagem-direita">
             <div class="left" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="300">
                 <ul class="list-block m-b-30">
-                    <h2 class="text-gestao m-t-30 m-b-30">Recursos do Manager SaaS para NF-e</h2>
+                    <h2 class="text-escrituracao-fiscal m-t-30 m-b-30">Recursos do Manager SaaS para NF-e</h2>
                     <li><i class="icon-success"></i> <span>Geração do XML a partir de requisições HTTP ou troca de arquivos em pasta</span></li>
                     <li><i class="icon-success"></i> <span>Auditor Online: validações técnicas e tributárias</span></li>
                     <li><i class="icon-success"></i> <span>Assinatura e gestão de Certificados Digitais</span></li>
@@ -195,11 +195,11 @@
                 <!-- Row  -->
                 <div class="row">
                     <!-- Column -->
-                    <div class="ml-5 col-lg-6 wrap-feature15-box" style="margin-top: 50px">
+                    <div class="col-lg-6 wrap-feature15-box" style="margin-top: 50px">
                         <div class="row">
                             <div class="col-md-12 m-b-30" data-aos="fade-down" data-aos-duration="1000">
                                 <div class="d-flex no-block">
-                                    <div class="no-shrink"><span class="icon-round bg-white display-4 text-gestao "><i class="icon-bell"></i></span></div>
+                                    <div class="no-shrink"><span class="icon-round bg-white display-4 text-escrituracao-fiscal "><i class="icon-bell"></i></span></div>
                                     <div class="p-20">
                                         <h5 class="font-medium"><a href="javascript:void(0)" class="linking op-5">Solicite um orçamento <i class="ti-arrow-right"></i></a></h5>
                                     </div>
@@ -207,7 +207,7 @@
                             </div>
                             <div class="col-md-12 m-b-30" data-aos="fade-down" data-aos-duration="2000">
                                 <div class="d-flex no-block">
-                                    <div class="no-shrink"><span class="icon-round bg-white display-4 text-gestao "><i class="icon-cloud"></i></span></div>
+                                    <div class="no-shrink"><span class="icon-round bg-white display-4 text-escrituracao-fiscal "><i class="icon-cloud"></i></span></div>
                                     <div class="p-20">
                                         <h5 class="font-medium"><a href="javascript:void(0)" class="linking op-5">Use de graça por 30 dias <i class="ti-arrow-right"></i></a></h5>
                                     </div>
@@ -215,7 +215,7 @@
                             </div>
                             <div class="col-md-12 m-b-30" data-aos="fade-down" data-aos-duration="3000">
                                 <div class="d-flex no-block">
-                                    <div class="no-shrink"><span class="icon-round bg-white display-4 text-gestao "><i class="icon-laptop"></i></span></div>
+                                    <div class="no-shrink"><span class="icon-round bg-white display-4 text-escrituracao-fiscal "><i class="icon-laptop"></i></span></div>
                                     <div class="p-20">
                                         <h5 class="font-medium"><a href="javascript:void(0)" class="linking op-5">Acesse a documentação <i class="ti-arrow-right"></i></a></h5>
                                     </div>
@@ -224,9 +224,9 @@
                         </div>
                     </div>
                     <!-- Column -->
-                    <div class="ml-5 col-lg-6 wrap-feature15-box m-l-40" data-aos="flip-left" data-aos-duration="1200">
+                    <div class="col-lg-6 wrap-feature15-box" data-aos="flip-left" data-aos-duration="1200">
                         <ul class="list-block m-b-30">
-                            <h2 class="text-gestao m-t-30 m-b-30">Serviços relacionados ao Manager SaaS NF-e</h2>
+                            <h2 class="text-escrituracao-fiscal m-t-30 m-b-30">Serviços relacionados ao Manager SaaS NF-e</h2>
                             <li><i class="icon-success"></i> <span>Atualizações fiscais</span></li>
                             <li><i class="icon-success"></i> <span>Atualizações evolutivas automáticas</span></li>
                             <li><i class="icon-success"></i> <span>Acompanhamento durante implantação</span></li>
@@ -243,7 +243,6 @@
                 <div class="col-lg-6 img-mobile">
                     <img src="/static/images/dfe/squads/industria/produtos/nfe/6.png" alt="">
                 </div>
-                <!-- <div class="col-lg-6 with-bg bg-dark"></div> -->
                 <div class="col-lg-6 text-white">
                     <div class="with-text text-right">
                         <h2 class="text-white m-b-30">Nota Segura</h2>
@@ -262,11 +261,11 @@
         </div> 
 
         <!-- Count -->
-        <count cor="#33A0DD"/>
+        <count fundo="white" cor="#33A0DD"/>
         <!-- Testemunhos -->
-        <testimonial cor1="#33A0DD" cor2="#0F76B8"/>
+        <!-- <testimonial cor1="#33A0DD" cor2="#0F76B8"/> -->
 
-        <div class="formulario bg-light"></div>
+        <formRD produto="NF-e" squad="industria" redirect="nfe" documento="dfe-9-nfe" token="9f38673c706d2697514d"/>
 
         <!-- Blog -->
         <blog cor="#33A0DD"/>
@@ -280,6 +279,7 @@ import count from "@/components/general/count";
 import caracteristicas from "@/components/general/caracteristicas";
 import testimonial from "@/components/general/testimonial";
 import blog from "@/components/general/blog";
+import formRD from '@/components/general/formProdutos';
 
 export default {
   components: {
@@ -287,7 +287,8 @@ export default {
     caracteristicas,
     testimonial,
     blog,
-    headerTop
+    headerTop,
+    formRD
   },
   mounted: function() {
     AOS.init({

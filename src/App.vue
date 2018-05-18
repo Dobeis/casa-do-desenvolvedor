@@ -2,7 +2,7 @@
   <div>
     <navbar/>
     <vue-scroll-top />
-    <router-view/>
+    <router-view title="title"/>
     <footer-comp/>
   </div>
 </template>

@@ -3,7 +3,11 @@
     <section class="header-produto" :style="style">
       <div class="middle-center">
         <div class="m-b-40">
-          <i class="display-4 icon-industry"></i>
+          <i v-if="squad === 'industria'" class="display-4 icon-industria"></i>
+          <i v-if="squad === 'transporte'" class="display-4 icon-transporte"></i>
+          <i v-if="squad === 'varejo'" class="display-4 icon-varejo"></i>
+          <i v-if="squad === 'servicos'" class="display-4 icon-servicos"></i>
+          <i v-if="squad === 'escrituracao-fiscal'" class="display-4 icon-escrituracao"></i>
         </div>
         <div class="display-title">
           <div class="item">
@@ -36,6 +40,7 @@ export default {
     titulo: String,
     produto: String,
     subtitulo: String,
+    squad: String,
     imagem: "",
     cor: String,
     fundo: String,
@@ -56,17 +61,14 @@ export default {
         return `background: ${cor1};
               background: -webkit-linear-gradient(legacy-direction(to right), ${cor1} 0%, ${cor2} 100%);
               background: -webkit-gradient(linear, left top, right top, from(${cor1}), to(${cor2}));
-              background: -webkit-linear-gradient(left, ${cor1} 0%, ${
-          this.cor2
-        } 100%);
+              background: -webkit-linear-gradient(left, ${cor1} 0%, ${this.cor2} 100%);
               background: -o-linear-gradient(left, ${cor1} 0%, ${cor2} 100%);
               background: linear-gradient(to right, ${cor1} 0%, ${cor2} 100%);
               background-size: cover;
+              background-repeat: no-repeat !important;
               min-height: 100vh;`;
       }
-      return `background: url('${
-        this.fundo
-      }'); background-size: cover; min-height: 100vh;`;
+      return `background: url('${this.fundo}'); background-size: cover; background-repeat: no-repeat !important; min-height: 100vh;`;
     },
     styleColor() {
       return `color: ${this.cor} !important;`;
@@ -124,7 +126,7 @@ export default {
 .header-produto .middle-center {
   margin: auto;
   text-align: center;
-  padding: 0 600px;
+  padding: 0 500px;
 }
 .header-produto .botoes {
   font-family: 'GothamRnd-Book', sans-serif;
