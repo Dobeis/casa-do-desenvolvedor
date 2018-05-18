@@ -68,7 +68,7 @@
                     <div class="col-lg-4 col-md-6">
                       <ul class="list-style-none">
                         <li>
-                          <h6 class="nav-title-link" style="margin-left: 13px;">Já sabe do que precisa? <br> Então, é só escolher!</h6>
+                          <h6 class="nav-title-link second-nav-title" style="margin-left: 13px;">Já sabe do que precisa? <br> Então, é só escolher!</h6>
                         </li>
                         <div class="row">
                           <div class="col-md-6">
@@ -411,5 +411,11 @@
   .topbar #h6-info {
     background: #343a40;
   }  
+  .topbar .hidden-md-down {
+    display: none;
+  }
+  .topbar .second-nav-title {
+    margin-left: 0 !important;
+  }
 }
 </style>
